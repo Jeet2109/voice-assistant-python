@@ -42,6 +42,7 @@ def takeCommand():
 		print("Say that again please...")
 		return "None"
 	return query 
+	
 def sendEmail(to,content):
 	server=smtplib.SMTP('smtp.gmail.com',587)
 	server.ehlo()
@@ -74,6 +75,14 @@ if __name__=="__main__":
 
 		elif 'open stackoverflow' in query:
 			webbrowser.open("stackoverflow.com")
+			break
+
+		elif 'open gmail' in query:
+			webbrowser.open("gmail.com")
+			break
+
+		elif 'open google classroom' in query:
+			webbrowser.open("classroom.google.com")
 			break
 
 		elif 'play music' in query:
